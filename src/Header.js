@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import {Link} from "react-router-dom";
 import ButtonWithDropDown from './DropdownButton';
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
@@ -12,13 +13,14 @@ import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useStateValue } from './StateProvider';
 
+
 function Header() {
     const [{user}, dispatch] = useStateValue();
 
   return (
     <div className = "header">
         <div className = "header__left"> 
-        <img src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/2048px-Facebook_f_logo_%282021%29.svg.png" alt = ""/>
+        <img src = "https://t3.ftcdn.net/jpg/00/84/82/62/360_F_84826209_BTRwFyUhjSxwN5bE3z5BzzRdnBPKbidc.jpg" alt = ""/>
         <div className = "header__input">
             <SearchIcon/>
             <input placeholder = "Search LinkedUp" type = "text" />
