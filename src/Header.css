@@ -11,6 +11,7 @@
 .header__left {
     display: flex; /*Put logo in line w/ search input*/
     justify-content: space-evenly;
+    cursor: pointer;
 
     
 }
@@ -47,6 +48,7 @@
     align-items: center;
     padding: 0 30px;
     cursor: pointer;
+    flex-direction: column;
 }
 .header__option:hover {
     /*This is for the grey outline over when hovering*/
@@ -59,15 +61,17 @@
 .header__option--active > .MuiSvgIcon-root{
     color: #3A506B;
 }
-.header__option--active {
-    border-bottom: 4px solid #3A506B;
-    /*This is the underline portion*/
-}
+
 
 .header__info {
     display: flex;
     align-items: center;
+    /*position: absolute;*/
 
+}
+
+.header__dropdown {
+    align-items: center;
 }
 .header__info > h4 {
     margin-left: 10px;
@@ -75,4 +79,8 @@
 }
 .header__right {
     display: flex;
+}
+
+.dropdown {
+    position: absolute;
 }
